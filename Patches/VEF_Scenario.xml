@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Vanilla Expanded Framework Scenario Compat -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Defines the structure you can add -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<!-- Symbol Definitions required to load modded objects -->
+						<KCSG.SymbolDef>
+							<defName>PRF_StoneWorks</defName>
+							<thing>PRF_StoneWorks</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>PRF_FurnaceII</defName>
+							<thing>PRF_FurnaceII</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>PRF_SelfCookerI</defName>
+							<thing>PRF_SelfCookerI</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>PRF_4k_Battery</defName>
+							<thing>PRF_4k_Battery</thing>
+						</KCSG.SymbolDef>
+						<KCSG.SymbolDef>
+							<defName>PRF_Shearer</defName>
+							<thing>PRF_Shearer</thing>
+						</KCSG.SymbolDef>
+						<!-- Structure Layouts Follow -->
+						<KCSG.StructureLayoutDef>
+							<defName>PRF_Factory_Cheap</defName>
+							<layouts>
+								<li>
+									<li>Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,PRF_StoneWorks,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,PRF_FurnaceII,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,PRF_SelfCookerI,.,WoodFiredGenerator,.,PRF_4k_Battery,WoodFiredGenerator,.,PRF_Shearer,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog</li>
+								</li>
+							</layouts>
+							<modRequirements>
+								<li>spdskatr.projectrimfactory</li>
+							</modRequirements>
+						</KCSG.StructureLayoutDef>
+						<KCSG.StructureLayoutDef>
+							<defName>PRF_Factory_Mid</defName>
+							<layouts>
+								<li>
+									<li>Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,PRF_StoneWorks,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,PRF_FurnaceII,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,PRF_SelfCookerI,.,WoodFiredGenerator,.,PRF_4k_Battery,WoodFiredGenerator,.,PRF_Shearer,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog</li>
+								</li>
+							</layouts>
+							<modRequirements>
+								<li>spdskatr.projectrimfactory</li>
+							</modRequirements>
+						</KCSG.StructureLayoutDef>
+						<KCSG.StructureLayoutDef>
+							<defName>PRF_Factory_Expensive</defName>
+							<layouts>
+								<li>
+									<li>Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,PRF_StoneWorks,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,PRF_FurnaceII,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,PRF_SelfCookerI,.,WoodFiredGenerator,.,PRF_4k_Battery,WoodFiredGenerator,.,PRF_Shearer,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,.,.,.,.,.,.,.,.,.,Wall_WoodLog</li>
+									<li>Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog</li>
+								</li>
+							</layouts>
+							<modRequirements>
+								<li>spdskatr.projectrimfactory</li>
+							</modRequirements>
+						</KCSG.StructureLayoutDef>
+					</value>
+				</li>
+				<!-- Adds support to add a structure to the scenario -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ScenarioDef[defName="PRF_FactoryEntrepreneur"]/scenario/parts</xpath>
+					<value>
+						<li Class="KCSG.ScenPart_AddStartingStructure">
+							<def>VFEC_AddStartingStructure</def>
+							<structureLabel>A new factory</structureLabel>
+							<nearMapCenter>True</nearMapCenter>
+							<chooseFrom>
+								<li>PRF_Factory_Cheap</li>
+								<li>PRF_Factory_Mid</li>
+								<li>PRF_Factory_Expensive</li>
+							</chooseFrom>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
