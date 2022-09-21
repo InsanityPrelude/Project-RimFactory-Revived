@@ -36,11 +36,17 @@ We have worked towards more balance and lore, so it now has more ingame content,
 
 ## PRF Series
 Project RimFactory - Core (This one)
+
 Project RimFactory - Lite (Cut down version made as a replacement for Industrial roller)
+
 Project RimFactory - Drones (Some drone stations, this will get a update later)
+
 Project RimFactory - Insanity (Equivalent Exchange, Alchemy, and crazy scientist?)
+
 Project RimFactory - Materials (A lite Material mod focused around factorio/satisfactory genre)
+
 Project RimFactory - Extras (Random stuff, comming later...)
+
 ATS - Framework (will be a future framework where many universal stuff will go)
 
 
